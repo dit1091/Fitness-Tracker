@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 require("./routes/html-routes.js")(app);
-app.use(require("./routes/api-routes.js"));
+require("./routes/api-routes.js")(app);
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
   useNewUrlParser: true,
