@@ -9,9 +9,6 @@ const PORT = process.env.PORT || 3000;
 //express
 const app = express();
 
-// Import your other router(s)
-const someRouter = require('./myOtherRouter');
-
 //url+JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -25,8 +22,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", {
   useFindAndModify: false
 });
 
-require("./routes/htmlRoutes.js")(app);
-require("./routes/apiRoutes.js")(app);
+app.use(require("./routes/htmlRoutes.js"));
+app.use(require("./routes/apiRoutes.js"));
 
 //server
 app.listen(PORT, () => {
