@@ -9,6 +9,9 @@ const PORT = process.env.PORT || 3000;
 //express
 const app = express();
 
+// Import your other router(s)
+const someRouter = require('./myOtherRouter');
+
 //url+JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
