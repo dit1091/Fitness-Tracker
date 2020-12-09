@@ -1,5 +1,5 @@
 "use strict";
-const Workout = require(`./workouts`);
+const Workout = require(`./workoutmodels.js`);
 module.exports = {
   Workout
 };
