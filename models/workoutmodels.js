@@ -1,12 +1,13 @@
+//schema object
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const exerciseSchema = new Schema({
   type: {
     type: String,
-    trim: true,
-    enum: ["cardio", "resistance"],
-    required: true
+      trim: true,
+      enum: ["cardio", "resistance"],
+      required: true
   },
   name: {
     type: String,
@@ -29,6 +30,8 @@ const workoutSchema = new Schema({
   exercises: [exerciseSchema]
 });
 
+//link to schema
 const Workout = mongoose.model("Workout", workoutSchema);
 
+//export schema
 module.exports = Workout;
