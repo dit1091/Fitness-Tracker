@@ -1,3 +1,5 @@
+'use strict';
+
 init();
 
 async function init() {
