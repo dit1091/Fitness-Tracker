@@ -29,4 +29,4 @@ This application can be used to track workouts. It uses a Mongo database with a 
 
 
 ## Questions 
-![Dannette Tejeda](https://ibb.co/5R0nTr7) (dit1091)  [dannettetejeda@gmail.com](mailto:dannettetejeda@gmail.com)
+![Dannette Tejeda](<a href="https://imgbb.com/"><img src="https://i.ibb.co/vjFQ13t/Icon.png" alt="Icon" border="0"></a>) (dit1091)  [dannettetejeda@gmail.com](mailto:dannettetejeda@gmail.com)
